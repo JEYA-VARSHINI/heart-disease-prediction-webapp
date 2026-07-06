@@ -1,0 +1,293 @@
+/* ===============================
+   GOOGLE FONT
+================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===============================
+   RESET
+================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===============================
+   BODY
+================================== */
+body{
+    background:#f4f8fb;
+    color:#333;
+}
+
+/* ===============================
+   HEADER
+================================== */
+header{
+    width:100%;
+    background:#0f4c81;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#90e0ef;
+}
+
+/* ===============================
+   HERO
+================================== */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    color:#0f4c81;
+    font-size:42px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+}
+
+/* ===============================
+   MAIN CARD
+================================== */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.prediction-card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    margin-bottom:50px;
+}
+
+/* ===============================
+   SECTION TITLE
+================================== */
+
+.section-title{
+
+    margin-top:35px;
+
+    margin-bottom:25px;
+
+    color:#0f4c81;
+
+    border-left:6px solid #0f4c81;
+
+    padding-left:15px;
+
+    font-size:24px;
+
+}
+
+/* ===============================
+   GRID
+================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+/* ===============================
+   FORM GROUP
+================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#333;
+
+}
+
+.form-control,
+
+.form-select{
+
+    border-radius:10px !important;
+
+    padding:12px !important;
+
+    border:1px solid #ced4da !important;
+
+    transition:.3s;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border:2px solid #0f4c81 !important;
+
+    box-shadow:0 0 10px rgba(15,76,129,.25);
+
+}
+
+/* ===============================
+   BUTTON
+================================== */
+
+.button-container{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+.predict-btn{
+
+    background:#0f4c81;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.predict-btn:hover{
+
+    background:#1565a8;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+}
+
+/* ===============================
+   FOOTER
+================================== */
+
+footer{
+
+    background:#0f4c81;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.footer-content h3{
+
+    margin-bottom:10px;
+
+}
+
+.footer-content p{
+
+    margin:8px 0;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================== */
+
+@media(max-width:992px){
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    header{
+
+        flex-direction:column;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        margin-top:15px;
+
+    }
+
+    nav a{
+
+        margin:0 10px;
+
+    }
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .prediction-card{
+
+        padding:25px;
+
+    }
+
+}
